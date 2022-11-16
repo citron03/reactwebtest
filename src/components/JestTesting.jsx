@@ -1,5 +1,5 @@
 export function plus(a, b) {
-  return -1;
+  return a + b;
 }
 
 const JestTesting = () => {
@@ -8,7 +8,9 @@ const JestTesting = () => {
       <h1>H1</h1>
       <div>
         <p>text</p>
-        <button>button</button>
+        <button onClick={plus(-1, -2)} placeholder="placeholder">
+          button
+        </button>
       </div>
     </div>
   );

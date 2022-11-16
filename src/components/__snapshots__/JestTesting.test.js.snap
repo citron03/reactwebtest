@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changes the class when hovered 1`] = `
+<button>
+  button
+</button>
+`;
+
+exports[`click button 1`] = `
+<button>
+  button
+</button>
+`;
+
+exports[`click button 2`] = `
+<button>
+  button
+</button>
+`;

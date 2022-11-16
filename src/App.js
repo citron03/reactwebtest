@@ -11,12 +11,10 @@ function App() {
   const store = createStore(reducer);
   return (
     <Provider store={store}>
-      <>
-        <Form />
-        <HttpRequestWithKy />
-        <HttpRequestWithSuperagent />
-        <ReduxTest />
-      </>
+      <Form />
+      <HttpRequestWithKy />
+      <HttpRequestWithSuperagent />
+      <ReduxTest />
     </Provider>
   );
 }

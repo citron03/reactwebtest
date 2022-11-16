@@ -47,6 +47,7 @@
     "@babel/preset-env": "^7.20.2",
     "@testing-library/react": "^13.4.0",
     "babel-jest": "^29.3.1",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.2.0"
   }
 }
