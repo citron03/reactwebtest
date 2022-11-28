@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 
 const apiCall = axios.create();
@@ -20,7 +20,9 @@ export default function TestRQ() {
     refetchOnWindowFocus: false,
     staleTime: 60 * 1000,
   });
+  const queryClient = useQueryClient();
   console.log(data);
+  console.log("queryClient", queryClient);
   return (
     <div>
       <h2>Use Query Test</h2>
