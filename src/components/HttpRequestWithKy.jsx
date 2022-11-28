@@ -1,6 +1,8 @@
+import { useState } from "react";
 import ky from "ky";
 
 const HttpRequestWithKy = () => {
+  const [response, setResponse] = useState("");
   const handlePostClick = async () => {
     const response = await ky
       .post("http://localhost:3105/login", {
@@ -11,7 +13,7 @@ const HttpRequestWithKy = () => {
         },
       })
       .json();
-    alert(JSON.stringify(response));
+    setResponse(JSON.stringify(response));
   };
   return (
     <div>
@@ -19,6 +21,7 @@ const HttpRequestWithKy = () => {
       <div>
         <h3>POST TEST</h3>
         <button onClick={handlePostClick}>POST REQUEST</button>
+        {response ? <div role="alert">{response}</div> : null}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { addOrderAction } from "../actions/ordersAction";
 
-const DispatchTest = ({ onAction }) => {
+const DispatchTest = ({ onAction, addOrderAction }) => {
   const [strData, setStrData] = useState("");
 
   const handleClick = useCallback(() => {
@@ -22,6 +22,7 @@ const DispatchTest = ({ onAction }) => {
       />
       <br />
       <button onClick={handleClick}>Apply</button>
+      <button onClick={() => addOrderAction("APPLE")}>ADD APPLE</button>
     </div>
   );
 };
@@ -29,4 +30,4 @@ const DispatchTest = ({ onAction }) => {
 const mapDispatchToProps = (dispatch) =>
   bindActionCreators({ addOrderAction }, dispatch);
 
-export default DispatchTest;
+export default connect(() => ({}), mapDispatchToProps)(DispatchTest);

@@ -4,8 +4,14 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
+    "@tanstack/react-query": "^4.18.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "axios": "^1.1.3",
     "ky": "^0.32.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -14,6 +20,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.0.5",
     "superagent": "^8.0.3",
+    "typescript": "^4.9.3",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
@@ -49,5 +56,9 @@
     "babel-jest": "^29.3.1",
     "jest": "^27.5.1",
     "react-test-renderer": "^18.2.0"
+  },
+  "jest": {
+    "transform": {},
+    "transformIgnorePatterns": []
   }
 }
