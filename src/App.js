@@ -22,7 +22,7 @@ function App() {
         {/* <HttpRequestWithKy /> */}
         {/* <HttpRequestWithSuperagent /> */}
         {/* <ReduxTest /> */}
-        {/* <Components /> */}
+        <Components />
         {/* <TestApiCall /> */}
         {/* <TestType /> */}
         <TestRQ />
